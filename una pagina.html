@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOFTVISION - Dashboard Estudiante</title>
+    <link rel="stylesheet" href="una pagina.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="logo">
+          <div class="logo-icon">SF</div>
+          SOFTVISION
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <span class="nav-icon">📊</span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">📚</span>
+              Mis Cursos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">📝</span>
+              Calificaciones
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">📅</span>
+              Horario
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">📋</span>
+              Tareas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">📢</span>
+              Anuncios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">💬</span>
+              Mensajes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">👤</span>
+              Mi Perfil
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="header">
+          <h1 class="header-title">Mi Dashboard</h1>
+          <div class="user-info">
+            <div class="user-avatar">YO</div>
+            <div class="user-details">
+              <h4>YO</h4>
+              <p>Estudiante</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-grid">
+          <!-- Calificaciones -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Mis Calificaciones</h3>
+              <div class="card-icon grades-icon">📊</div>
+            </div>
+            <table class="grades-table">
+              <thead>
+                <tr>
+                  <th>Materia</th>
+                  <th>Calificación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Matemáticas</td>
+                  <td><span class="grade-badge grade-a">A</span></td>
+                </tr>
+                <tr>
+                  <td>Ciencias</td>
+                  <td><span class="grade-badge grade-b">B+</span></td>
+                </tr>
+                <tr>
+                  <td>Historia</td>
+                  <td><span class="grade-badge grade-a">A-</span></td>
+                </tr>
+                <tr>
+                  <td>Inglés</td>
+                  <td><span class="grade-badge grade-c">B</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Horario de Hoy -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Horario de Hoy</h3>
+              <div class="card-icon schedule-icon">📅</div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-time">08:00</div>
+              <div class="schedule-info">
+                <h4>Matemáticas</h4>
+                <p>Aula 201 - Prof. García</p>
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-time">10:00</div>
+              <div class="schedule-info">
+                <h4>Ciencias</h4>
+                <p>Laboratorio - Prof. Martínez</p>
+              </div>
+            </div>
+            <div class="schedule-item">
+              <div class="schedule-time">14:00</div>
+              <div class="schedule-info">
+                <h4>Historia</h4>
+                <p>Aula 105 - Prof. López</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tareas Pendientes -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Tareas Pendientes</h3>
+              <div class="card-icon assignments-icon">📋</div>
+            </div>
+            <div class="assignment-item">
+              <div class="assignment-info">
+                <h4>Ensayo de Historia</h4>
+                <p>La Revolución Industrial</p>
+              </div>
+              <div class="due-date">Hoy</div>
+            </div>
+            <div class="assignment-item">
+              <div class="assignment-info">
+                <h4>Proyecto de Ciencias</h4>
+                <p>Sistema Solar</p>
+              </div>
+              <div class="due-date">Mañana</div>
+            </div>
+            <div class="assignment-item">
+              <div class="assignment-info">
+                <h4>Ejercicios de Matemáticas</h4>
+                <p>Capítulo 8</p>
+              </div>
+              <div class="due-date">Viernes</div>
+            </div>
+          </div>
+
+          <!-- Anuncios Recientes -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Anuncios Recientes</h3>
+              <div class="card-icon announcements-icon">📢</div>
+            </div>
+            <div class="announcement-item">
+              <h4>Suspensión de Clases</h4>
+              <p>
+                Las clases del viernes 28 de junio quedan suspendidas por
+                actividades especiales.
+              </p>
+              <div class="announcement-date">26 de junio, 2025</div>
+            </div>
+            <div class="announcement-item">
+              <h4>Entrega de Boletines</h4>
+              <p>
+                Los boletines del segundo período estarán disponibles la próxima
+                semana.
+              </p>
+              <div class="announcement-date">25 de junio, 2025</div>
+            </div>
+            <div class="announcement-item">
+              <h4>Reunión de Padres</h4>
+              <p>
+                Se convoca a reunión de padres de familia para el próximo martes
+                a las 2:00 PM.
+              </p>
+              <div class="announcement-date">24 de junio, 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Navegación activa
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          document
+            .querySelectorAll(".nav-link")
+            .forEach((l) => l.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+
+      // Efecto hover para las tarjetas
+      document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-8px)";
+        });
+
+        card.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0)";
+        });
+      });
+    </script>
+  </body>
+</html>
