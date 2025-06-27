@@ -110,9 +110,10 @@ body {
     }
 
     .footer {
+      font-weight: 600;
       text-align: center;
       font-size: 0.8rem;
-      color: black;
+      color: white;
       position: absolute;
       bottom: 10px;
       width: 100%;
