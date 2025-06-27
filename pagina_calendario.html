@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOFTVISION - Calendario</title>
+    <link rel="stylesheet" href="pagina_calendario.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+          <div class="logo-icon">SF</div>
+          SOFTVISION
+        </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">
+                    <span class="icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📚</span>
+                    Mis Cursos
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📝</span>
+                    Calificaciones
+                </a>
+                <a href="#" class="nav-item active">
+                    <span class="icon">📅</span>
+                    Horario
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📋</span>
+                    Tareas
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📢</span>
+                    Anuncios
+                </a>
+                
+                <a href="#" class="nav-item">
+                    <span class="icon">💬</span>
+                    Mensajes
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">👤</span>
+                    Perfil
+                </a>
+            </nav>
+            
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h2>Events</h2>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search here...">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                    <div class="user-avatar">YO</div>
+                    <div class="notifications">
+                        <span class="notification-icon">🔔</span>
+                        <span class="notification-badge">1</span>
+                    </div>
+                    <div class="user-profile">
+                        <span>YO</span>
+                        <small>Estudiante</small>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-wrapper">
+                <!-- Calendar Section -->
+                <section class="calendar-section">
+                    <div class="calendar-header">
+                        <h3>Calendar</h3>
+                        <div class="calendar-controls">
+                            <select class="month-selector">
+                                <option>Enero</option>
+                                <option>Febrero</option>
+                                <option>Marso</option>
+                            </select>
+                            <select class="year-selector">
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="calendar-grid">
+                        <div class="calendar-days">
+                            <div class="day-header">lunes</div>
+                            <div class="day-header">martes</div>
+                            <div class="day-header">miercoles</div>
+                            <div class="day-header">jueves</div>
+                            <div class="day-header">viernes</div>
+                            <div class="day-header">sabado</div>
+                            <div class="day-header">domingo</div>
+                        </div>
+                        
+                        <div class="calendar-dates">
+                            <div class="date-cell prev-month">31</div>
+                            <div class="date-cell">1</div>
+                            <div class="date-cell has-events">
+                                2
+                                <div class="event-dots">
+                                    <span class="dot yellow"></span>
+                                    <span class="dot red"></span>
+                                    <span class="dot blue"></span>
+                                </div>
+                            </div>
+                            <div class="date-cell">3</div>
+                            <div class="date-cell">4</div>
+                            <div class="date-cell">5</div>
+                            <div class="date-cell today">6</div>
+                            
+                            <div class="date-cell">7</div>
+                            <div class="date-cell">8</div>
+                            <div class="date-cell">9</div>
+                            <div class="date-cell selected">
+                                10
+                                <div class="event-label">10am, 2+</div>
+                            </div>
+                            <div class="date-cell">11</div>
+                            <div class="date-cell">12</div>
+                            <div class="date-cell">13</div>
+                            
+                            <div class="date-cell">14</div>
+                            <div class="date-cell">15</div>
+                            <div class="date-cell">16</div>
+                            <div class="date-cell">17</div>
+                            <div class="date-cell">
+                                18
+                                <div class="event-label">2am, 2+</div>
+                            </div>
+                            <div class="date-cell">19</div>
+                            <div class="date-cell has-events">
+                                20
+                                <div class="event-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot blue"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="date-cell">21</div>
+                            <div class="date-cell">22</div>
+                            <div class="date-cell">23</div>
+                            <div class="date-cell has-events">
+                                24
+                                <div class="event-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot blue"></span>
+                                </div>
+                            </div>
+                            <div class="date-cell">25</div>
+                            <div class="date-cell">26</div>
+                            <div class="date-cell">27</div>
+                            
+                            <div class="date-cell">28</div>
+                            <div class="date-cell">
+                                29
+                                <div class="event-label">jeremy</div>
+                            </div>
+                            <div class="date-cell">30</div>
+                            <div class="date-cell next-month">1</div>
+                            <div class="date-cell next-month">2</div>
+                            <div class="date-cell next-month">3</div>
+                            <div class="date-cell next-month">4</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Schedule Details -->
+                <aside class="schedule-details">
+                    <h3>HORARIO</h3>
+                    <p class="schedule-date">jueves, 10 Abril, 2025</p>
+                    
+                    <div class="schedule-list">
+                        <div class="schedule-item purple">
+                            <div class="schedule-info">
+                                <h4>PROGRMACION</h4>
+                                <p>algoritmos basicos</p>
+                                <div class="schedule-time">
+                                    <span class="time-icon">📅</span>
+                                    <span>martes 20, 2025</span>
+                                </div>
+                                <div class="schedule-time">
+                                    <span class="time-icon">🕘</span>
+                                    <span>09:00 - 10:00 AM</span>
+                                </div>
+                            </div>
+                            <div class="schedule-avatar">👤</div>
+                        </div>
+
+                        <div class="schedule-item orange">
+                            <div class="schedule-info">
+                                <h4>ARTES BASICAS</h4>
+                                <p>ARTES</p>
+                                <div class="schedule-time">
+                                    <span class="time-icon">📅</span>
+                                    <span>martes 20, 2025</span>
+                                </div>
+                                <div class="schedule-time">
+                                    <span class="time-icon">🕘</span>
+                                    <span>10:00 - 11:00 AM</span>
+                                </div>
+                            </div>
+                            <div class="schedule-avatar">👤</div>
+                        </div>
+
+                        <div class="schedule-item yellow">
+                            <div class="schedule-info">
+                                <h4>HTML & CSS Class</h4>
+                                <p>Programacion</p>
+                                <div class="schedule-time">
+                                    <span class="time-icon">📅</span>
+                                    <span>miercoles 21, 2025</span>
+                                </div>
+                                <div class="schedule-time">
+                                    <span class="time-icon">🕘</span>
+                                    <span>09:00 - 10:00 AM</span>
+                                </div>
+                            </div>
+                            <div class="schedule-avatar">👤</div>
+                        </div>
+
+                        <div class="schedule-item dark">
+                            <div class="schedule-info">
+                                <h4>COMO FRITAR YUCA</h4>
+                                <p>cocina</p>
+                                <div class="schedule-time">
+                                    <span class="time-icon">📅</span>
+                                    <span>miercoles 21, 2025</span>
+                                </div>
+                                <div class="schedule-time">
+                                    <span class="time-icon">🕘</span>
+                                    <span>09:00 - 10:00 AM</span>
+                                </div>
+                            </div>
+                            <div class="schedule-avatar">👤</div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

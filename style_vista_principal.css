@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #0077c8;
+    color: white;
+}
+
+.logo-escuela {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.boton-inicio-sesion{
+    background-color: #ffffff;
+    color: #002147;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+.boton-inicio-sesion:hover{
+    border-radius: 20px;
+}
+.seccion-principal {
+  background-image: url('imagenes/fondo-principal.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.seccion-principal::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenido-principal {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contenido-principal h1 {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.texto-bienvenida {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boton-ver-avisos {
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #002147;
+  cursor: pointer;
+}
+
+.boton-ver-avisos:hover {
+  background-color: #ddd;
+}
+
+.seccion-estadisticas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px 50px 20px; 
+  background-color: rgb(255, 255, 255);
+}
+
+.tarjeta-estadistica {
+    background-color: #0077c8;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    width: 200px;
+    transition: 0.50s ease;
+}
+
+.tarjeta-estadistica:hover{
+    scale: 1.04;
+}
+
+
+.tarjeta-estadistica img {
+  width: 50px;
+  margin-bottom: 30px;
+}
