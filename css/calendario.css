@@ -129,25 +129,31 @@ body {
     gap: 20px;
 }
 
-.search-box {
+/* .search-box {
     position: relative;
-}
+} */
 
-.search-box input {
+/* .search-box input {
+    padding: 10px 40px 10px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    width: 250px;
+    background-color: #f9fafb;
+} */
+.input {
     padding: 10px 40px 10px 16px;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     width: 250px;
     background-color: #f9fafb;
 }
-
-.search-icon {
+/* .search-icon {
     position: absolute;
     right: 12px;
     top: 50%;
     transform: translateY(-50%);
     color: #6b7280;
-}
+} */
 
 .notifications {
     position: relative;
