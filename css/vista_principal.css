@@ -38,7 +38,7 @@ body {
     border-radius: 20px;
 }
 .seccion-principal {
-  background-image: url('imagenes/fondo-principal.jpg');
+  background-image: url('/assets/imagen/fondo-principal.jpg');
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
