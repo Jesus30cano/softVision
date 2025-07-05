@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.contenedor-general {
+    display: flex;
+    height: 100vh;
+}
+
+.barra-lateral {
+    width: 220px;
+    background-color: #0077c8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.barra-lateral .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.barra-lateral .logo h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra-lateral ul li {
+    margin: 15px 0;
+}
+
+.barra-lateral ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.barra-lateral ul li a:hover,
+.barra-lateral ul li a.activo {
+    background-color: #a0cae6;
+}
+
+.cabecera {
+    background-color: #a0cae6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-bottom: 2px solid #ccc;
+}
+
+.info-usuario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.foto-mini {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #0077c8;
+    object-fit: cover;
+}
+
+.nombre-usuario {
+    font-weight: bold;
+    color: #0077c8;
+    font-size: 16px;
+}
+
+
+.acciones-derecha {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icono-noti {
+    width: 40px;
+    height: 40px;
+}
+
+.cerrar-sesion a {
+    text-decoration: none;
+    color: #0077c8;
+    font-weight: bold;
+}
+
+.cerrar-sesion a:hover {
+    text-decoration: underline;
+}
+
+.contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contenido-principal {
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.contenedor-perfil {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.contenedor-perfil h2 {
+    color: #0077c8;
+    margin-bottom: 25px;
+}
+
+.foto-perfil {
+    margin-bottom: 20px;
+}
+
+.foto-perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #0077c8;
+    object-fit: cover;
+}
+
+.foto-perfil input {
+    margin-top: 10px;
+}
+
+.formulario-perfil {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0077c8;
+}
+
+.campo input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.campo input[readonly] {
+    background-color: #e0e0e0;
+}
+
+.direccion {
+    grid-column: span 2;
+}
+
+.boton-guardar {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.boton-guardar button {
+    background-color: #0077c8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.boton-guardar button:hover {
+    background-color: #a0cae6;
+}

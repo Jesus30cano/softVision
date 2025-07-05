@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Perfil - SoftVision</title>
+    <link rel="stylesheet" href="../css/perfil.css" />
+</head>
+
+<body>
+    <div class="contenedor-general">
+
+        <nav class="barra-lateral">
+            <div class="logo">
+                <h2>SoftVision</h2>
+            </div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Actividades y Exámenes</a></li>
+                <li><a href="#">Calificaciones</a></li>
+                <li><a href="#">Horario</a></li>
+                <li><a href="#">Foros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#" class="activo">Perfil</a></li>
+            </ul>
+        </nav>
+
+        <div class="contenido">
+           
+            <header class="cabecera">
+                <div class="info-usuario">
+                    <img src="../assets/icons/perfil.jpg" alt="Foto de perfil" class="foto-mini" />
+                    <span class="nombre-usuario">Gina Canchila</span>
+                </div>
+                <div class="acciones-derecha">
+                    <div class="notificaciones">
+                        <a href="#"><img src="../assets/icons/notificacion.webp" alt="Notificaciones" class="icono-noti"></a>
+                    </div>
+                    <div class="cerrar-sesion">
+                        <a href="#">Cerrar sesión</a>
+                    </div>
+                </div>
+            </header>
+
+            <main class="contenido-principal">
+                <div class="contenedor-perfil">
+                    <h2>Mi Perfil</h2>
+
+                    <div class="foto-perfil">
+                        <img src="../assets/icons/perfil.jpg" alt="Foto de perfil" id="fotoPerfil" />
+                        <input type="file" id="cambiarFoto" accept="image/*" />
+                    </div>
+
+                    <form class="formulario-perfil">
+                        <div class="campo">
+                            <label>Nombre completo:</label>
+                            <input type="text" value="Gina Canchila" readonly />
+                        </div>
+
+                        <div class="campo">
+                            <label>Número de documento:</label>
+                            <input type="text" value="123456789" readonly />
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo electrónico:</label>
+                            <input type="email" value="gina@email.com" />
+                        </div>
+
+                        <div class="campo">
+                            <label>Teléfono:</label>
+                            <input type="tel" value="3001234567" />
+                        </div>
+
+                        <div class="campo direccion">
+                            <label>Dirección:</label>
+                            <input type="text" value="Calle 123 #45-67" />
+                        </div>
+
+                        <div class="boton-guardar">
+                            <button type="submit">Guardar cambios</button>
+                        </div>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
