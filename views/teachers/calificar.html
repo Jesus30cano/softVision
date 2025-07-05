@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calificar Entregas - SoftVision</title>
+    <link rel="stylesheet" href="../../css/teachers-css/estilos.css" />
+</head>
+
+<body>
+    <div class="panel">
+        <aside class="barra-lateral">
+            <h2 class="logo-sistema">SoftVision</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="crear-actividad.html">Crear Actividad/Examen</a></li>
+                    <li><a href="ver-actividad.html">Ver Actividad/Examen</a></li>
+                    <li><a href="calificar.html" class="activo">Calificar</a></li>
+                    <li><a href="#">Informes</a></li>
+                    <li><a href="#">Asistencia</a></li>
+                    <li><a href="#">Foros</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="contenido-principal">
+            <header class="barra-superior">
+                <div class="informacion-profesor">
+                    <img src="../../assets/icons/perfil.jpg" alt="Foto del profesor" />
+                    <div class="datos-profesor">
+                        <h3>Gina Canchila</h3>
+                        <span>Docente</span>
+                    </div>
+                </div>
+                <div class="acciones-superior">
+                    <div class="notificaciones">
+                        <a href="#"><img src="../../assets/icons/notificacion.webp" alt="Notificaciones" class="icono-noti"></a>
+                    </div>
+                    <div class="cerrar-sesion">
+                        <a href="#">Cerrar sesión</a>
+                    </div>
+            </header>
+
+            <section class="seccion-calificar">
+                <h2>Calificar Actividades - Lengua Castellana 7°</h2>
+                <div class="tarjetas-calificacion">
+                    <div class="tarjeta-estudiante">
+                        <h3>María López <span class="etiqueta-actividad">Actividad</span></h3>
+                        <p><strong>Archivo:</strong> lectura_maria.pdf</p>
+                        <a href="#" target="_blank" class="boton-ver-archivo">Ver archivo</a>
+                        <p><strong>Entregado:</strong> 2025-07-04</p>
+                        <label>Nota:</label>
+                        <input type="number" min="0" max="5" step="0.1" />
+                        <label>Comentarios:</label>
+                        <textarea rows="2"></textarea>
+                        <button class="boton-enviar">Guardar</button>
+                    </div>
+
+                    <div class="tarjeta-estudiante">
+                        <h3>Carlos Pérez <span class="etiqueta-actividad">Actividad</span></h3>
+                        <p><strong>Archivo:</strong> lectura_carlos.pdf</p>
+                        <a href="entregas/lectura_carlos.pdf" target="_blank" class="boton-ver-archivo">Ver archivo</a>
+                        <p><strong>Entregado:</strong> 2025-07-05</p>
+                        <label>Nota:</label>
+                        <input type="number" min="0" max="5" step="0.1" />
+                        <label>Comentarios:</label>
+                        <textarea rows="2"></textarea>
+                        <button class="boton-enviar">Guardar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion-calificar">
+                <h2>Calificar Exámenes - Matemáticas 9°</h2>
+                <div class="tarjetas-calificacion">
+                    <div class="tarjeta-estudiante">
+                        <h3>Ana Torres <span class="etiqueta-examen">Examen</span></h3>
+                        <p><strong>Archivo:</strong> examen_ana.pdf</p>
+                        <a href="entregas/examen_ana.pdf" target="_blank" class="boton-ver-archivo">Ver archivo</a>
+                        <p><strong>Entregado:</strong> 2025-07-06</p>
+                        <label>Nota:</label>
+                        <input type="number" min="0" max="5" step="0.1" />
+                        <label>Comentarios:</label>
+                        <textarea rows="2"></textarea>
+                        <button class="boton-enviar">Guardar</button>
+                    </div>
+
+                    <div class="tarjeta-estudiante">
+                        <h3>Juan Ramírez <span class="etiqueta-examen">Examen</span></h3>
+                        <p><strong>Archivo:</strong> examen_juan.pdf</p>
+                        <a href="entregas/examen_juan.pdf" target="_blank" class="boton-ver-archivo">Ver archivo</a>
+                        <p><strong>Entregado:</strong> 2025-07-06</p>
+                        <label>Nota:</label>
+                        <input type="number" min="0" max="5" step="0.1" />
+                        <label>Comentarios:</label>
+                        <textarea rows="2"></textarea>
+                        <button class="boton-enviar">Guardar</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

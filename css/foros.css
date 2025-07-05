@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 280px;
+    background: linear-gradient(180deg, #6366f1 0%, #4f46e5 100%);
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: #ff6b6b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.logo h1 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-weight: 500;
+}
+
+.nav-item .icon {
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-footer p {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.sidebar-footer small {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    margin-left: 280px;
+    background-color: #f5f7fa;
+}
+
+/* Header */
+.header {
+    background: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notifications {
+    position: relative;
+}
+
+.notification-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #ef4444;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.user-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-right: 12px;
+}
+.user-profile span {
+    font-weight: 500;
+}
+
+.user-profile small {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Foro Principal */
+.gestion-foro {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f7fa;
+    margin-left: 280px;
+    margin-top: 60px;
+}
+
+.gestion-foro h2 {
+    font-size: 2.5em;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Filtro de Materias */
+.foro-filtros {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.select-materia {
+    padding: 10px;
+    font-size: 1.1em;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+/* Contenedor de las materias */
+.foro-materia {
+    display: flex;
+    margin-top: 20px;
+}
+
+.foro-materia.active {
+    display: block;
+}
+
+/* Cuadros de discusiones */
+.foro-container {
+    display: flex;
+    width: 100%;
+    gap: 20px; 
+}
+
+.discusion {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 5px solid #6366f1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.discusion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.discusion h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #252525;
+    padding-right: 20px; 
+}
+
+.discusion p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+    padding-right: 20px;
+}
+
+.discusion button {
+    padding: 10px 20px;
+    background-color: #6366f1;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-end;
+}
+
+
+
+.discusion button:hover {
+    background-color: #4f46e5;
+}
+
+.crear-foro {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 5px solid #6366f1;
+    border-right: 5px solid #6366f1;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.crear-foro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.crear-foro h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #252525;
+}
+
+.crear-foro p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.crear-foro button {
+    padding: 10px 20px;
+    background-color: #6366f1;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.crear-foro button:hover {
+    background-color: #4f4cc2;  /* Cambio de color al pasar el ratón */
+}
+
+
+/* Botón para crear una nueva discusión */
+.crear-discucion {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.crear-discucion button {
+    padding: 12px 24px;
+    background-color: #1f2937;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.crear-discucion button:hover {
+    background-color: #212121;
+}
+
+/* Estilos del contenedor de todo el foro (centrado) */
+.gestion-foro {
+    max-width: 1200px;
+    margin: 20px auto;
+}

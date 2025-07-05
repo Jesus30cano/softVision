@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Actividad - SoftVision</title>
+    <link rel="stylesheet" href="../../css/teachers-css/estilos.css" />
+</head>
+
+<body>
+    <div class="panel">
+        <aside class="barra-lateral">
+            <h2 class="logo-sistema">SoftVision</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="crear-actividad.html" class="activo">Crear Actividad/Examen</a></li>
+                    <li><a href="ver-actividad.html">Ver actividad/Examen</a></li>
+                    <li><a href="calificar.html">Calificar</a></li>
+                    <li><a href="#">Informes</a></li>
+                    <li><a href="#">Asistencia</a></li>
+                    <li><a href="#">Foros</a></li>
+                    <li><a href="#">Extender Plazos</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="contenido-principal">
+            <header class="barra-superior">
+                <div class="informacion-profesor">
+                    <img src="../../assets/icons/perfil.jpg" alt="Foto del profesor" />
+                    <div class="datos-profesor">
+                        <h3>Gina Canchila</h3>
+                        <span>Docente</span>
+                    </div>
+                </div>
+                <div class="acciones-superior">
+                    <div class="notificaciones">
+                        <a href="#"><img src="../../assets/icons/notificacion.webp" alt="Notificaciones" class="icono-noti"></a>
+                    </div>
+                    <div class="cerrar-sesion">
+                        <a href="#">Cerrar sesión</a>
+                    </div>
+                </div>
+            </header>
+
+            <section class="seccion-crear">
+                <h2>Crear Nueva Actividad</h2>
+
+                <form class="formulario-actividad">
+                    <div class="campo-formulario">
+                        <label for="titulo">Título de la actividad</label>
+                        <input type="text" id="titulo" name="titulo" required />
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="instrucciones">Instrucciones</label>
+                        <textarea id="instrucciones" name="instrucciones" rows="4" required></textarea>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="materia">Materia</label>
+                        <select id="materia" name="materia" required>
+                            <option value="">Seleccione una materia</option>
+                            <option value="matematicas">Matemáticas</option>
+                            <option value="lengua">Lengua Castellana</option>
+                            <option value="biologia">Biología</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="curso">Curso o grupo</label>
+                        <select id="curso" name="curso" required>
+                            <option value="">Seleccione un curso</option>
+                            <option value="9A">9°A</option>
+                            <option value="9B">9°B</option>
+                            <option value="10">10°</option>
+                            <option value="11">11°</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="tipo">Tipo de creación</label>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="actividad">Actividad</option>
+                            <option value="examen">Examen</option>
+                        </select>
+                    </div>
+
+
+                    <div class="campo-formulario">
+                        <label for="fecha">Fecha límite</label>
+                        <input type="date" id="fecha" name="fecha" required />
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="archivo">Adjuntar recurso (opcional)</label>
+                        <input type="file" id="archivo" name="archivo" />
+                    </div>
+
+                    <button type="submit" class="boton-enviar">Crear Actividad</button>
+                </form>
+
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

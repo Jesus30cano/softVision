@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="../css/cursos.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+          <div class="logo-icon">SF</div>
+          SOFTVISION
+        </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item">
+                    <span class="icon">📊</span>
+                    Dashboard
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📚</span>
+                    Mis Cursos
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📝</span>
+                    Calificaciones
+                </a>
+                <a href="#" class="nav-item active">
+                    <span class="icon">📅</span>
+                    Horario
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📋</span>
+                    Tareas
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📢</span>
+                    Anuncios
+                </a>
+                
+                <a href="#" class="nav-item">
+                    <span class="icon">💬</span>
+                    Mensajes
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">👤</span>
+                    Perfil
+                </a>
+            </nav>
+            
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h2>Mis Cursos</h2>
+                <div class="header-right">
+                    <div class="user-avatar">K</div>
+                    <div class="notifications">
+                        <span class="notification-icon">🔔</span>
+                        <span class="notification-badge">1</span>
+                    </div>
+                    <div class="user-profile">
+                        <span>Keyner</span>
+                        <small>profesor</small>
+                    </div>
+                </div>
+            </header>
+
+                <div class="gestion_cursos">
+                    <div class="cursos-container">
+        
+                        <!-- Sección de los Cursos en la izquierda-->
+                        <div class="cursos">
+                            <div class="curso" data-materia="historia" data-grado="10">
+                            <h3 class="curso-titulo">Historia: Revolución Francesa</h3>
+                            <p class="curso-descripcion">Nivel: Secundaria | Grado: 10A | Hora: 9:00 AM</p>
+                        </div>
+
+                        <div class="curso" data-materia="historia" data-grado="10">
+                            <h3 class="curso-titulo">Historia: Segunda Guerra Mundial</h3>
+                            <p class="curso-descripcion">Nivel: Secundaria | Grado: 10A | Hora: 11:00 AM</p>
+                        </div>
+
+                        <div class="curso" data-materia="historia" data-grado="9">
+                            <h3 class="curso-titulo">Historia: Civilizaciones Antiguas</h3>
+                            <p class="curso-descripcion">Nivel: Secundaria | Grado: 9B | Hora: 10:00 AM</p>
+                        </div>
+
+                        <div class="curso" data-materia="geografia" data-grado="9">
+                            <h3 class="curso-titulo">Geografía: El Mundo y sus Continentes</h3>
+                            <p class="curso-descripcion">Nivel: Secundaria | Grado: 9B | Hora: 12:00 PM</p>
+                        </div>
+
+                        <div class="curso" data-materia="geografia" data-grado="10">
+                            <h3 class="curso-titulo">Geografía: Ecosistemas del Mundo</h3>
+                            <p class="curso-descripcion">Nivel: Secundaria | Grado: 10A | Hora: 2:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- nav de materias en la parte derecha -->
+                    <div class="nav-materias" >
+                        <h2>Busqueda por grado</h2>
+                        <select class="nav-item-materia" id="materias">
+                            <option value="10" selected>Decimo</option>
+                            <option value="9">Noveno</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
