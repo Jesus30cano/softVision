@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoftVision - Dashboard Escolar</title>
+  <link rel="stylesheet" href="../../css/admin/administrador.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+     <!-- Sidebar -->
+      <div class="sidebar">
+        <div class="logo">
+          <div class="logo-icon">SF</div>
+          SOFTVISION
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">
+              <span class="nav-icon">📊</span>
+              Dashboard
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">📝</span>
+              Reporte
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="horario.html" class="nav-link">
+              <span class="nav-icon">📅</span>
+              Horario
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">📋</span>
+              Tareas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">📢</span>
+              Anuncios
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="mensajes.html" class="nav-link">
+              <span class="nav-icon">💬</span>
+              Mensajes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <span class="nav-icon">👤</span>
+              Mi Perfil
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="header">
+        <h1>Mi Dashboard</h1>
+        <div class="user-info">
+          <div class="user-avatar">YO</div>
+          <div class="user-details">
+            <span class="user-name">ADMINISTRADOR</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <div class="dashboard-content">
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon students">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-info">
+              <h3>1,247</h3>
+              <p>Estudiantes Activos</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon teachers">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <div class="stat-info">
+              <h3>85</h3>
+              <p>Profesores</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon courses">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="stat-info">
+              <h3>42</h3>
+              <p>Cursos Activos</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon attendance">
+              <i class="fas fa-chart-pie"></i>
+            </div>
+            <div class="stat-info">
+              <h3>94%</h3>
+              <p>Asistencia Promedio</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Announcements -->
+        <div class="announcements-section">
+          <div class="section-header">
+            <h2>Anuncios Recientes</h2>
+            <button class="btn btn-primary">
+              <i class="fas fa-plus"></i>
+              Nuevo Anuncio
+            </button>
+          </div>
+
+          <div class="announcements-list">
+            <div class="announcement-card">
+              <div class="announcement-header">
+                <h3>Suspensión de Clases</h3>
+                <span class="announcement-date">26 de junio, 2025</span>
+              </div>
+              <p>Las clases del viernes 28 de junio quedan suspendidas por actividades especiales.</p>
+              <div class="announcement-actions">
+                <button class="btn btn-sm btn-outline">
+                  <i class="fas fa-edit"></i>
+                  Editar
+                </button>
+                <button class="btn btn-sm btn-danger">
+                  <i class="fas fa-trash"></i>
+                  Eliminar
+                </button>
+              </div>
+            </div>
+
+            <div class="announcement-card">
+              <div class="announcement-header">
+                <h3>Entrega de Boletines</h3>
+                <span class="announcement-date">25 de junio, 2025</span>
+              </div>
+              <p>Los boletines del segundo período estarán disponibles la próxima semana.</p>
+              <div class="announcement-actions">
+                <button class="btn btn-sm btn-outline">
+                  <i class="fas fa-edit"></i>
+                  Editar
+                </button>
+                <button class="btn btn-sm btn-danger">
+                  <i class="fas fa-trash"></i>
+                  Eliminar
+                </button>
+              </div>
+            </div>
+
+            <div class="announcement-card">
+              <div class="announcement-header">
+                <h3>Reunión de Padres</h3>
+                <span class="announcement-date">24 de junio, 2025</span>
+              </div>
+              <p>Se convoca a reunión de padres de familia para el próximo martes a las 2:00 PM.</p>
+              <div class="announcement-actions">
+                <button class="btn btn-sm btn-outline">
+                  <i class="fas fa-edit"></i>
+                  Editar
+                </button>
+                <button class="btn btn-sm btn-danger">
+                  <i class="fas fa-trash"></i>
+                  Eliminar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+          <h2>Acciones Rápidas</h2>
+          <div class="actions-grid">
+            <button class="action-card">
+              <i class="fas fa-user-plus"></i>
+              <span>Registrar Estudiante</span>
+            </button>
+            <button class="action-card">
+              <i class="fas fa-calendar-plus"></i>
+              <span>Crear Evento</span>
+            </button>
+            <button class="action-card">
+              <i class="fas fa-file-download"></i>
+              <span>Generar Reporte</span>
+            </button>
+            <button class="action-card">
+              <i class="fas fa-cog"></i>
+              <span>Configuración</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="recent-activity">
+          <h2>Actividad Reciente</h2>
+          <div class="activity-list">
+            <div class="activity-item">
+              <div class="activity-icon">
+                <i class="fas fa-user-check"></i>
+              </div>
+              <div class="activity-content">
+                <p><strong>Juan Pérez</strong> completó el registro de matrícula</p>
+                <span class="activity-time">Hace 2 horas</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">
+                <i class="fas fa-file-alt"></i>
+              </div>
+              <div class="activity-content">
+                <p><strong>Prof. María García</strong> subió las calificaciones del período</p>
+                <span class="activity-time">Hace 4 horas</span>
+              </div>
+            </div>
+            <div class="activity-item">
+              <div class="activity-icon">
+                <i class="fas fa-calendar"></i>
+              </div>
+              <div class="activity-content">
+                <p>Se programó una <strong>reunión de docentes</strong> para el lunes</p>
+                <span class="activity-time">Hace 1 día</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Simple functionality for nav menu
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+        this.parentNode.classList.add('active');
+      });
+    });
+
+    // Add click functionality to action cards
+    document.querySelectorAll('.action-card').forEach(card => {
+      card.addEventListener('click', function () {
+        alert('Funcionalidad de: ' + this.querySelector('span').textContent);
+      });
+    });
+  </script>
+</body>
+
+</html>

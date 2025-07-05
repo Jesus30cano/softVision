@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  background-color: #f4f6f9;
+}
+
+.barra_navegacion {
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.barra_navegacion_lateral {
+  width: 250px;
+  background: linear-gradient(to bottom, #6e78ff, #8758ff);
+  color: white;
+  height: 100vh;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo p {
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  text-shadow: 1px 1px #333;
+}
+
+.lista_menu {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.opciones, .submenu {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sublista {
+  margin-left: 15px;
+  display: none;
+}
+
+.submenu:hover .sublista {
+  display: block;
+}
+
+.main_dashboard {
+  margin-left: 270px;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.titulo_dashboard {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.tarjetas_estadisticas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.tarjeta {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.tarjeta h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.actividades_recientes {
+  margin-top: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.actividades_recientes h3 {
+  margin-bottom: 10px;
+}
+
+.actividades_recientes ul {
+  list-style: disc;
+  margin-left: 20px;
+}
